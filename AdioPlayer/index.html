@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <script src="https://kit.fontawesome.com/366ced2627.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="menu">
+           <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+           </div> 
+           <div class="circle">
+            <i class="fa-solid fa-xmark"></i>
+           </div> 
+        </nav>
+        <div class="image">
+            <img src="./darshan raval.jpg" alt="image">
+        </div>
+        <div class="discription">
+            <h2>Asal Main</h2>
+            <p>Lorem ipsum, dolor sit amet</p>
+        </div>
+        <div class="audio">
+            <audio  id="song">
+                <source src="Asal Mein - Darshan Raval-(PagalWorld.Ink).mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="line">
+            <input type="range" value="0" id="progress">
+        </div>
+        <div class="pause">
+           <div> <i class="fa-solid fa-angles-left"></i></div>
+           <div onclick="playPause()"><i class="fa-solid fa-play" id="controlIcon"></i></i></div>
+            <div><i class="fa-solid fa-angles-right"></i></div>
+        </div>
+    </div>
+</body>
+
+</html>

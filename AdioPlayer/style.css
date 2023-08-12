@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(244, 233, 233);
+}
+
+.container{
+    background: #FFC0D3;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    /* border-radius: 5%; */
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+   
+} 
+
+nav .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color:  #FFC0D3;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #e299af;
+    cursor: pointer;
+
+}
+.image{
+    height: 40%;
+     /* border: 2px solid red; */
+     display: flex;
+     align-items: flex-end;
+    justify-content: center;
+}
+
+.image img{
+    height: 70%;
+    border-radius: 50%;
+    border: 0.5rem solid white;
+  
+}
+
+
+.discription{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.line{
+      /* border: 2px solid red; */
+      display: flex ;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 90%;
+    height: 5px;
+    background: #f53192;
+    cursor: pointer;
+    border-radius:5px;
+    /* margin-top: 40px; */
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background:#f53192;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.pause{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+.pause div{
+     background: #fff;  
+     color: #f53192;
+     padding: 0.7rem;
+     border-radius: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+     margin-top: 1.5rem;
+     box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22) ;
+}
+
+.pause div:nth-child(2){
+    transform: scale(1.5);
+    background-color: #f53192;
+    color: #fff;
+}
